@@ -2,12 +2,12 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="font-abc  mt-36 md:flex flex-row-reverse  pb-32 ">
+    <div className="font-abc  mt-36 md:flex flex-row-reverse pb-32 ">
       <div>
         <img
           src="/images/undraw_Programming_re_kg9v (1).png"
           alt="programmer's image"
-          className="mt-10 md:w-3/4 md:ml-40"
+          className="mt-10  md:w-3/4 md:ml-32 rounded-t-full"
         />
       </div>
       <div className="mt-20">
