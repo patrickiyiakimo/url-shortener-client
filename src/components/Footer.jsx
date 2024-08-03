@@ -3,7 +3,7 @@ import Booster from "./Booster";
 
 const Footer = () => {
   return (
-    <div>
+    <div id="footer"> 
       <Booster />
       <footer className="footer bg-base-300 text-base-content p-10 font-abc">
         <div>

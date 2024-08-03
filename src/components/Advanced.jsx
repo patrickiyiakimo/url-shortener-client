@@ -5,7 +5,7 @@ import React from "react";
 
 const Advanced = () => {
   return (
-    <div className="font-abc ">
+    <div className="font-abc " id="advanced">
       <h2 className="text-center text-4xl font-bold mb-5">
         Advanced Statistics
       </h2>
