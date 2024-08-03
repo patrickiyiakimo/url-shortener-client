@@ -2,7 +2,7 @@ import React from "react";
 
 const Booster = () => {
   return (
-    <div>
+    <div className="font-abc">
       <div className="text-center bg-gray-400 p-10 md:p-20 text-gray-200">
         <h2 className="text-xl md:text-4xl font-bold">
           Boost Your Links Today
