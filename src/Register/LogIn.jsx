@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import * as Yup from "yup";
 
 const Login = () => {
@@ -120,6 +121,13 @@ const Login = () => {
           className="md:w-3/4 md:ml-40"
         />
       </div>
+      <Helmet>
+        <title>Log In | URL Shortener</title>
+        <meta
+          name="Log in page"
+          content="Enjoy unlimited access to our URL Shortner App"
+        />
+      </Helmet>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import * as Yup from "yup";
 
 const SignUp = () => {
@@ -71,70 +72,79 @@ const SignUp = () => {
     }
   };
 
-  return (
-    <div className="mt-28 md:mt-40 font-abc ml-2 md:ml-20 md:flex">
-      <div>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter your name"
-            value={formData.name}
-            onChange={handleChange}
-            className={`block border-2 rounded-md w-96 py-3 mt-8 ${
-              errors.name ? "border-red-500" : "border-gray-500"
-            }`}
-          />
-          {errors.name && <p className="text-red-500">{errors.name}</p>}
+    return (
+      <div className="mt-28 md:mt-40 font-abc ml-2 md:ml-20 md:flex">
+        <div>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              value={formData.name}
+              onChange={handleChange}
+              className={`block border-2 rounded-md w-96 py-3 mt-8 ${
+                errors.name ? "border-red-500" : "border-gray-500"
+              }`}
+            />
+            {errors.name && <p className="text-red-500">{errors.name}</p>}
 
-          <input
-            type="text"
-            name="email"
-            placeholder="Enter your email"
-            value={formData.email}
-            onChange={handleChange}
-            className={`block border-2 rounded-md w-96 py-3 mt-8 ${
-              errors.email ? "border-red-500" : "border-gray-500"
-            }`}
-          />
-          {errors.email && <p className="text-red-500">{errors.email}</p>}
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter your email"
+              value={formData.email}
+              onChange={handleChange}
+              className={`block border-2 rounded-md w-96 py-3 mt-8 ${
+                errors.email ? "border-red-500" : "border-gray-500"
+              }`}
+            />
+            {errors.email && <p className="text-red-500">{errors.email}</p>}
 
-          <input
-            type="password"
-            name="password"
-            placeholder="Enter your password"
-            value={formData.password}
-            onChange={handleChange}
-            className={`block border-2 rounded-md w-96 py-3 mt-8 ${
-              errors.password ? "border-red-500" : "border-gray-500"
-            }`}
-          />
-          {errors.password && <p className="text-red-500">{errors.password}</p>}
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              value={formData.password}
+              onChange={handleChange}
+              className={`block border-2 rounded-md w-96 py-3 mt-8 ${
+                errors.password ? "border-red-500" : "border-gray-500"
+              }`}
+            />
+            {errors.password && (
+              <p className="text-red-500">{errors.password}</p>
+            )}
 
-          <button
-            type="submit"
-            className="btn mt-8 w-96 md:px-20 rounded-md text-white hover:text-gray-600 bg-blue-300"
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? "Signing Up..." : "Sign Up"}
-          </button>
-        </form>
-        {error && <p className="text-red-500 mt-4">{error}</p>}
-        {response && (
-          <p className="text-green-100 p-2 rounded-md bg-green-500 mt-4 text-xl font-semibold">
-            {response}
-          </p>
-        )}
+            <button
+              type="submit"
+              className="btn mt-8 w-96 md:px-20 rounded-md text-white hover:text-gray-600 bg-blue-300"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? "Signing Up..." : "Sign Up"}
+            </button>
+          </form>
+          {error && <p className="text-red-500 mt-4">{error}</p>}
+          {response && (
+            <p className="text-green-100 p-2 rounded-md bg-green-500 mt-4 text-xl font-semibold">
+              {response}
+            </p>
+          )}
+        </div>
+        <div>
+          <img
+            src="/images/undraw_Programming_re_kg9v (1).png"
+            alt="programmer's image"
+            className="md:w-3/4 md:ml-40"
+          />
+        </div>
+        <Helmet>
+          <title>Sign Up | URL Shortener</title>
+          <meta
+            name="Sign Up page"
+            content="Register and get feeds on how our URL Shortner App"
+          />
+        </Helmet>
       </div>
-      <div>
-        <img
-          src="/images/undraw_Programming_re_kg9v (1).png"
-          alt="programmer's image"
-          className="md:w-3/4 md:ml-40"
-        />
-      </div>
-    </div>
-  );
+    );
 };
 
 export default SignUp;

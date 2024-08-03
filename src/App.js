@@ -7,10 +7,18 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import Advanced from "./components/Advanced";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 function App() {
   return (
     <Router>
+      <Helmet>
+        <title>URL Shortener</title>
+        <meta
+          name="Description"
+          content="Enjoy unlimited access to URL Shortener App"
+        />
+      </Helmet>
       <div className="App">
         <Navbar />
         <Switch>
