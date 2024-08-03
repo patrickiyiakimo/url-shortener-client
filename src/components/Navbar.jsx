@@ -4,7 +4,7 @@ import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100 font-abc text-gray-700 shadow-xl fixed z-50 top-0">
+    <div className="navbar bg-base-100 font-abc shadow-xl fixed z-50 top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -25,15 +25,15 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-lg dropdown-content bg-base-100 text-gray-700 rounded-box z-[1] mt-3 w-52  p-2 shadow"
+            className="menu menu-lg dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52  p-2 shadow"
           >
-            <li className="hover:text-blue-600">
+            <li className="">
               <a>Features</a>
             </li>
-            <li className="hover:text-blue-600">
+            <li className="">
               <a>Pricing</a>
             </li>
-            <li className="hover:text-blue-600">
+            <li className="">
               <a>Resources</a>
             </li>
             <div className="navbar-end">
@@ -52,13 +52,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
-          <li className="hover:text-blue-600">
+          <li className="">
             <a>Features</a>
           </li>
-          <li className="hover:text-blue-600">
+          <li className="">
             <a>Pricing</a>
           </li>
-          <li className="hover:text-blue-600">
+          <li className="">
             <a>Resources</a>
           </li>
         </ul>

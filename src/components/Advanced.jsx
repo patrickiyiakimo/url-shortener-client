@@ -5,7 +5,7 @@ import React from "react";
 
 const Advanced = () => {
   return (
-    <div className="font-abc">
+    <div className="font-abc ">
       <h2 className="text-center text-4xl font-bold mb-5">
         Advanced Statistics
       </h2>
@@ -14,7 +14,7 @@ const Advanced = () => {
         our advanced statistics dashboard
       </p>
       <div className="md:grid grid-cols-3 md:ml-20 md:mr-20">
-        <div className="shadow-xl p-10 m-5 text-gray-700">
+        <div className="shadow-xl p-10 m-5 ">
           {/* <button className="w-14 h-14 bg-gray-700 rounded-full">
             <IoStatsChartSharp className="text-blue-500 w-10 h-10 ml-1" />
           </button> */}
@@ -24,7 +24,7 @@ const Advanced = () => {
             mean a thing. Branded links help instill confidence in your content.
           </p>
         </div>
-        <div className="shadow-xl p-10 m-5 text-gray-700 ">
+        <div className="shadow-xl p-10 m-5 ">
           {/* <button className="w-14 h-14 bg-gray-700 rounded-full">
             <LiaRecordVinylSolid className="text-blue-500 w-10 h-10 ml-2" />
           </button> */}
@@ -34,7 +34,7 @@ const Advanced = () => {
             people engage with your content help install better information.
           </p>
         </div>
-        <div className="shadow-xl p-10 m-5 text-gray-700">
+        <div className="shadow-xl p-10 m-5 ">
           {/* <button className="w-14 h-14 bg-gray-700 rounded-full">
             <BiCustomize className="text-blue-500 w-10 h-10 ml-2" />
           </button> */}

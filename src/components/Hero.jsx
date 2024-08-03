@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="font-abc text-gray-700 mt-36 md:flex flex-row-reverse  pb-32 ">
+    <div className="font-abc  mt-36 md:flex flex-row-reverse  pb-32 ">
       <div>
         <img
           src="/images/undraw_Programming_re_kg9v (1).png"
