@@ -122,7 +122,7 @@ const Login = () => {
         />
       </div>
       <Helmet>
-        <title>Log In | URL Shortener</title>
+        <title>URL Shortener | Log In</title>
         <meta
           name="Log in page"
           content="Enjoy unlimited access to our URL Shortner App"

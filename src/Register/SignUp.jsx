@@ -137,7 +137,7 @@ const SignUp = () => {
           />
         </div>
         <Helmet>
-          <title>Sign Up | URL Shortener</title>
+          <title>URL Shortener | Sign Up</title>
           <meta
             name="Sign Up page"
             content="Register and get feeds on how our URL Shortner App"
