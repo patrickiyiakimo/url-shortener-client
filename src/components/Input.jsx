@@ -99,7 +99,7 @@ const Input = () => {
                 <p>{link}</p>
                 <button
                   onClick={() => handleCopy(link, index)}
-                  className="text-white md:ml-52 mb-5 px-6 py-1 hover:bg-blue-800 bg-blue-500 rounded-lg"
+                  className="text-white md:ml-48 mb-5 px-6 py-1 hover:bg-blue-800 bg-blue-500 rounded-lg"
                 >
                   {copiedIndex === index ? "Copied!" : "Copy"}
                 </button>
