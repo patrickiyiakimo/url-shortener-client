@@ -53,13 +53,16 @@ const SignUp = () => {
 
   const postData = async () => {
     try {
-      const res = await fetch("http://localhost:8000/userRegistration", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch(
+        "https://longurl-shortener-server.vercel.app/userRegistration",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const result = await res.json();
       if (!res.ok) {

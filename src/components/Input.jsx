@@ -26,13 +26,16 @@ const Input = () => {
     try {
       await validationSchema.validate({ url }, { abortEarly: false });
 
-      const res = await fetch("http://localhost:8000/urlSubmit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ longUrl: url }),
-      });
+      const res = await fetch(
+        "https://longurl-shortener-server.vercel.app/urlSubmit",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ longUrl: url }),
+        }
+      );
 
       if (!res.ok) {
         throw new Error("Network response was not ok");
