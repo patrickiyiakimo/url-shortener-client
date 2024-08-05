@@ -68,7 +68,10 @@ const Input = () => {
 
   return (
     <div className="font-abc pb-20">
-      <div className="bg-blue bg-gray-900 rounded-md ml-5 mr-10 md:ml-40 md:mr-40 p-10 flex-nowrap">
+      <i className="text-center text-2xl font-semibold">
+        <p>Enter Your Long URL Here</p>
+      </i>
+      <div className="bg-blue bg-gray-900 rounded-md mt-5 ml-5 mr-10 md:ml-40 md:mr-40 p-10 flex-nowrap">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
