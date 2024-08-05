@@ -54,7 +54,7 @@ const SignUp = () => {
   const postData = async () => {
     try {
       const res = await fetch(
-        "https://longurl-shortener-server.vercel.app/userRegistration",
+        "https://weblifyurl.vercel.app/userRegistration",
         {
           method: "POST",
           headers: {

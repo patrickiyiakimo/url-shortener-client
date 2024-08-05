@@ -47,16 +47,13 @@ const Login = () => {
 
   const postData = async () => {
     try {
-      const res = await fetch(
-        "https://longurl-shortener-server.vercel.app/userLogin",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const res = await fetch("https://weblifyurl.vercel.app/userLogin", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (!res.ok) {
         const errorData = await res.text(); // Read response as text for debugging
