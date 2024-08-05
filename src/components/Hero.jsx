@@ -23,9 +23,11 @@ const Hero = () => {
           Enhance your brand's growth and business potential by utilizing short,
           memorable, and engaging links with Weblify's versatile platform.
         </p>
-        <button className="btn mt-10 ml-20 px-20 text-white hover:text-gray-600 md:ml-28 md:px-6 rounded-full bg-blue-300">
-          Get Started
-        </button>
+        <a href="#input" id="input">
+          <button className="btn mt-10 ml-20 px-20 text-white hover:text-gray-600 md:ml-28 md:px-6 rounded-full bg-blue-300">
+            Get Started
+          </button>
+        </a>
       </div>
     </div>
   );
