@@ -93,7 +93,7 @@ const Input = () => {
         )}
         {error && <p className="text-red-500 mt-4 ml-10">{error}</p>}
         {response.length > 0 && (
-          <div className="text-green-500 pt-3 pl-1 md:pl-3 md:font-semibold mt-4 bg-white md:ml-8 rounded-md md:mr-72">
+          <div className="text-green-500 pt-3 pl-1 md:pl-3 md:font-semibold mt-4 bg-white md:ml-8 rounded-md md:mr-52">
             {response.map((link, index) => (
               <div key={index} className="mb-2 md:flex">
                 <p>{link}</p>

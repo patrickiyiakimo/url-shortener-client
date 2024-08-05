@@ -140,7 +140,7 @@ const SignUp = () => {
           />
         </div>
         <Helmet>
-          <title>URL Shortener | Sign Up</title>
+          <title>Weblify | Sign Up</title>
           <meta
             name="Sign Up page"
             content="Register and get feeds on how our URL Shortner App"

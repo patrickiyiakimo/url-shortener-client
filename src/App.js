@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Helmet>
-        <title>URL Shortener</title>
+        <title>Weblify</title>
         <meta
           name="Description"
           content="Enjoy unlimited access to URL Shortener App"
