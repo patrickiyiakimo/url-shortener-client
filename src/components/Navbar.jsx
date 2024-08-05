@@ -1,7 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
+  // theme toggle function
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  );
+
+  const handleToggle = (e) => {
+    if (e.target.checked) {
+      setTheme("dark");
+    } else {
+      setTheme("light");
+    }
+  };
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+    const localTheme = localStorage.getItem("theme");
+    document.querySelector("html").setAttribute("data-theme", localTheme);
+  }, [theme]);
+
   return (
     <div className="navbar bg-base-100 font-abc shadow-xl fixed z-50 top-0">
       <div className="navbar-start">
@@ -32,22 +51,30 @@ const Navbar = () => {
             <li className="">
               <a href="#faq">FAQ</a>
             </li>
-            <li className="">
+            <li className="mb-5">
               <a href="#footer">Footer</a>
             </li>
             <div className="navbar-end">
               <RouterLink to="login">
-                <button className="btn w-40 rounded-md">Log In</button>
+                <button className="btn bg-slate-400 text-gray-700 hover:bg-slate-400 hover:text-gray-900 w-40 rounded-md">Log In</button>
               </RouterLink>
               <RouterLink to="signup">
-                <button className="btn mt-3 px-6 w-40 rounded-md text-white  hover:text-gray-600 bg-blue-300">
+                <button className="btn mt-10 px-6 w-40 rounded-md text-white  hover:text-gray-600 bg-blue-300">
                   Sign Up
                 </button>
               </RouterLink>
+              <li>
+                <input
+                  type="checkbox"
+                  className="toggle toggle-info ml-7 mt-10 mb-5 lg:hidden"
+                  onChange={handleToggle}
+                  checked={theme === "dark"}
+                />
+              </li>
             </div>
           </ul>
         </div>
-        <a className="ml-20 md:pl-5 text-3xl font-bold ">Weblify</a>
+        <a className="ml-20 md:pl-5 text-3xl font-bold">Weblify</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
@@ -72,6 +99,14 @@ const Navbar = () => {
           </button>
         </RouterLink>
       </div>
+      <li>
+        <input
+          type="checkbox"
+          className="toggle toggle-info ml-10 mr-10 hidden lg:flex"
+          onChange={handleToggle}
+          checked={theme === "dark"}
+        />
+      </li>
     </div>
   );
 };

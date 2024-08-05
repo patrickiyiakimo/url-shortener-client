@@ -85,7 +85,7 @@ const SignUp = () => {
               placeholder="Enter your name"
               value={formData.name}
               onChange={handleChange}
-              className={`block border-2 rounded-md w-96 py-3 mt-8 ${
+              className={`block border-2 rounded-md w-96 py-3 mt-24 ${
                 errors.name ? "border-red-500" : "border-gray-500"
               }`}
             />
@@ -136,7 +136,7 @@ const SignUp = () => {
           <img
             src="/images/undraw_Programming_re_kg9v (1).png"
             alt="programmer's image"
-            className="md:w-3/4 md:ml-40"
+            className="md:w-2/3 md:ml-44 rounded-t-full mt-8 mb-40 md:mt-5"
           />
         </div>
         <Helmet>

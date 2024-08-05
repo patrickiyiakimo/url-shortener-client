@@ -39,11 +39,11 @@ function App() {
             <div>
               <Faq />
             </div>
-            <div>
-              <Footer />
-            </div>
           </Route>
         </Switch>
+        <div>
+          <Footer />
+        </div>
       </div>
     </Router>
   );

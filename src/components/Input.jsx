@@ -73,10 +73,10 @@ const Input = () => {
           <input
             type="text"
             name="url"
-            placeholder="Shorten a link here ..."
+            placeholder="Shorten a link here..."
             value={url}
             onChange={handleChange}
-            className={`md:ml-8 py-3 w-full md:w-3/4 rounded-md ${
+            className={`md:ml-8 py-3 pl-3 w-full md:w-3/4 rounded-md ${
               validationError ? "border-red-500 border-2" : ""
             }`}
           />
