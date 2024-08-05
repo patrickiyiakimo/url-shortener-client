@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="mt-20">
         <h1 className="font-bold text-5xl pb-3 ml-2 md:text-6xl md:ml-28">
           More than just <br />
-          shorter links
+          <span className="underline">shorter links</span>
         </h1>
         <p className="ml-2 md:ml-28">
           Build your brand's recognition and get detailed insights <br />
