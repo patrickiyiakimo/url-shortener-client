@@ -6,11 +6,11 @@ import React from "react";
 const Advanced = () => {
   return (
     <div className="font-abc " id="advanced">
-      <h2 className="text-center text-4xl font-bold mb-5">
+      <h2 className="text-center text-2xl md:text-4xl font-bold mb-5">
         Advanced Statistics
       </h2>
       <p className="text-center md:mb-16">
-        Track how your link are performing across the web with <br />
+        Track how your link are performing across the web with <br className="hidden md:block"/>
         our advanced statistics dashboard
       </p>
       <div className="md:grid grid-cols-3 md:ml-20 md:mr-20">
