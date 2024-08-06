@@ -4,7 +4,7 @@ const Faq = () => {
   return (
     <div className="font-abc  mb-20" id="faq">
       <div>
-        <h1 className="text-center text-6xl font-bold p-5">FAQ</h1>
+        <h1 className="text-center text-3xl md:text-6xl font-bold p-5">FAQ</h1>
         <p className="text-center text-2xl font-semibold pb-10">
           Frequently Asked Questions
         </p>
