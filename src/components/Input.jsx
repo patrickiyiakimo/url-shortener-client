@@ -68,12 +68,12 @@ const Input = () => {
       <i className="text-center text-2xl font-semibold">
         <p>Enter Your Long URL Here</p>
       </i>
-      <div className="bg-blue bg-gray-900 rounded-md mt-5 ml-5 mr-10 md:ml-40 md:mr-40 p-10 flex-nowrap">
+      <div className="bg-blue bg-gray-900 rounded-md mt-5 ml-5  mr-10 md:ml-40 md:mr-40 p-10 flex-nowrap">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
             name="url"
-            placeholder="Shorten a link here..."
+            placeholder="Shorten a link here"
             value={url}
             onChange={handleChange}
             className={`md:ml-8 py-3 pl-3 w-full md:w-3/4 rounded-md ${
@@ -93,7 +93,7 @@ const Input = () => {
         )}
         {error && <p className="text-red-500 mt-4 ml-10">{error}</p>}
         {response.length > 0 && (
-          <div className="text-green-500 pt-3 pl-1 md:pl-3 md:font-semibold mt-4 bg-white md:ml-8 rounded-md md:mr-52">
+          <div className="text-green-500 pt-3 pl-1 md:pl-3 text-sm text-nowrap md:text-md md:font-semibold mt-4 bg-white md:ml-8 rounded-md md:mr-52">
             {response.map((link, index) => (
               <div key={index} className="mb-2 md:flex">
                 <p>{link}</p>

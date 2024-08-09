@@ -6,7 +6,7 @@ const Hero = () => {
       <div>
         <img
           src="/images/undraw_Programming_re_kg9v (1).png"
-          alt="programmer's image"
+          alt="programmer"
           className="mt-10  md:w-3/4 md:ml-32 rounded-t-full"
         />
       </div>
