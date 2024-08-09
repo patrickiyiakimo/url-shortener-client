@@ -12,7 +12,7 @@ const Hero = () => {
       </div>
       <div className="mt-20">
         <h1 className="font-bold text-center text-3xl pb-3  md:text-6xl md:ml-28">
-          More than just <br className="hidden md:block"/>
+          More than just <br className="hidden md:block" />
           <span className="underline text-nowrap">shorter links</span>
         </h1>
         <p className="ml-2 md:ml-28">
