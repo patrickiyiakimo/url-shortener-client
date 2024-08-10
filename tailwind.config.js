@@ -6,15 +6,6 @@ module.exports = {
       fontFamily: {
         abc: ["Montserrat", "sans-serif"],
       },
-      // keyframes: {
-      //   pulse: {
-      //     "0%, 100%": { transform: "scale(1)" },
-      //     "50%": { transform: "scale(1.5)" },
-      //   },
-      // },
-      // animation: {
-      //   pulse: "pulse 1s ease-in-out infinite",
-      // },
     },
   },
   variants: {
