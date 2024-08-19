@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="font-abc  mt-36 md:flex flex-row-reverse pb-32 ">
+    <div className="font-abc  mt-36 lg:flex flex-row-reverse pb-32 ">
       <div>
         <img
           src="/images/undraw_Programming_re_kg9v (1).png"
@@ -11,7 +11,7 @@ const Hero = () => {
         />
       </div>
       <div className="mt-20">
-        <h1 className="font-bold ml-20  text-3xl pb-3  md:text-6xl md:ml-28">
+        <h1 className="font-bold ml-20  text-3xl pb-3  md:text-6xl md:text-center">
           More than just <br className="hidden md:block" />
           <span className="underline ml-3 text-nowrap md:flex-wrap-reverse">shorter links</span>
         </h1>

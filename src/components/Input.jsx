@@ -68,7 +68,7 @@ const Input = () => {
       <i className="text-center text-2xl font-semibold">
         <p>Enter Your Long URL Here</p>
       </i>
-      <div className="bg-blue bg-gray-900 rounded-md mt-5 ml-5  mr-10 md:ml-40 md:mr-40 p-10 flex-nowrap">
+      <div className="bg-blue bg-gray-900 rounded-md mt-5 ml-5  mr-10 md:ml-10 md:mr-10 lg:ml-40 lg:mr-40 p-10 md:whitespace-nowrap flex-nowrap">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -76,7 +76,7 @@ const Input = () => {
             placeholder="Shorten a link here"
             value={url}
             onChange={handleChange}
-            className={`md:ml-8 py-3 pl-3 w-full md:w-3/4 rounded-md ${
+            className={`-md:ml-3 py-3 pl-3 w-full md:w-3/4 rounded-md lg:ml-8 ${
               validationError ? "border-red-500 border-2" : ""
             }`}
           />

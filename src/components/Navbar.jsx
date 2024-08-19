@@ -56,7 +56,9 @@ const Navbar = () => {
             </li>
             <div className="navbar-end">
               <RouterLink to="login">
-                <button className="btn bg-slate-400 text-gray-700 hover:bg-slate-400 hover:text-gray-900 w-40 rounded-md">Log In</button>
+                <button className="btn bg-slate-400 text-gray-700 hover:bg-slate-400 hover:text-gray-900 w-40 rounded-md">
+                  Log In
+                </button>
               </RouterLink>
               <RouterLink to="signup">
                 <button className="btn mt-10 px-6 w-40 rounded-md text-white  hover:text-gray-600 bg-blue-300">
@@ -74,6 +76,7 @@ const Navbar = () => {
             </div>
           </ul>
         </div>
+        {/* <a className="ml-20 md:pl-5 text-3xl font-bold">Weblify</a> */}
         <a className="ml-20 md:pl-5 text-3xl font-bold">Weblify</a>
       </div>
       <div className="navbar-center hidden lg:flex">
