@@ -77,7 +77,6 @@ const Navbar = () => {
             </div>
           </ul>
         </div>
-        {/* <a className="ml-20 md:pl-5 text-3xl font-bold">Weblify</a> */}
         <Link to="/" className="ml-20 md:pl-5 text-3xl flex  font-bold">
           <button className="pointer-events-none w-10 pr-2">
             <img src="/images/logoipsum-249.svg " className="w-10 mr-2" alt="logo" />
