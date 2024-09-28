@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Navbar = () => {
   // theme toggle function
@@ -77,12 +78,12 @@ const Navbar = () => {
           </ul>
         </div>
         {/* <a className="ml-20 md:pl-5 text-3xl font-bold">Weblify</a> */}
-        <a className="ml-20 md:pl-5 text-3xl flex  font-bold">
+        <Link to="/" className="ml-20 md:pl-5 text-3xl flex  font-bold">
           <button className="pointer-events-none w-10 pr-2">
             <img src="/images/logoipsum-249.svg " className="w-10 mr-2" alt="logo" />
           </button>
           Weblify
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
