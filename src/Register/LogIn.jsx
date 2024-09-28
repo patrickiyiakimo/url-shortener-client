@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import * as Yup from "yup";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
   const [response, setResponse] = useState(null);
@@ -8,6 +9,8 @@ const Login = () => {
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const history = useHistory()
+  
 
   const validationSchema = Yup.object().shape({
     email: Yup.string()
@@ -30,6 +33,7 @@ const Login = () => {
     try {
       await validationSchema.validate(formData, { abortEarly: false });
       await postData();
+      history.push("/")
     } catch (error) {
       if (error.name === "ValidationError") {
         const validationErrors = {};
