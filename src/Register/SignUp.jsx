@@ -122,7 +122,11 @@ const SignUp = () => {
               className="btn mt-8 w-96 md:px-20 rounded-md text-white hover:text-gray-600 bg-blue-300"
               disabled={isSubmitting}
             >
-              {isSubmitting ? "Signing Up..." : "Sign Up"}
+              {isSubmitting ? (
+                <span className="loading loading-spinner loading-md"></span>
+              ) : (
+                "Sign Up"
+              )}
             </button>
           </form>
           {error && <p className="text-red-500 mt-4">{error}</p>}
