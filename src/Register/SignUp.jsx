@@ -89,7 +89,7 @@ const SignUp = () => {
               placeholder="Enter your name"
               value={formData.name}
               onChange={handleChange}
-              className={`block border-2 rounded-md w-96 py-3 mt-24 ${
+              className={`block border-2 pl-2 rounded-md w-96 py-3 mt-24 ${
                 errors.name ? "border-red-500" : "border-gray-500"
               }`}
             />
@@ -101,7 +101,7 @@ const SignUp = () => {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
-              className={`block border-2 rounded-md w-96 py-3 mt-8 ${
+              className={`block border-2 pl-2 rounded-md w-96 py-3 mt-8 ${
                 errors.email ? "border-red-500" : "border-gray-500"
               }`}
             />
@@ -113,7 +113,7 @@ const SignUp = () => {
               placeholder="Enter your password"
               value={formData.password}
               onChange={handleChange}
-              className={`block border-2 rounded-md w-96 py-3 mt-8 ${
+              className={`block border-2 pl-2 rounded-md w-96 py-3 mt-8 ${
                 errors.password ? "border-red-500" : "border-gray-500"
               }`}
             />
@@ -143,7 +143,7 @@ const SignUp = () => {
         <div>
           <img
             src="/images/undraw_Programming_re_kg9v (1).png"
-            alt="programmer's image"
+            alt="programmer-logo"
             className="md:w-2/3 md:ml-44 rounded-t-full mt-8 mb-40 md:mt-5"
           />
         </div>
